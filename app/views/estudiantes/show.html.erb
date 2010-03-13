@@ -1,0 +1,43 @@
+<p>
+  <b>Nombre_ususario</b>
+  <%=h @estudiante.nombre_usuario %>
+</p>
+
+<p>
+  <b>Password</b>
+  <%=h @estudiante.password %>
+</p>
+
+<p>
+  <b>Nombre</b>
+  <%=h @estudiante.nombre %>
+</p>
+
+<p>
+  <b>A_paterno</b>
+  <%=h @estudiante.a_paterno %>
+</p>
+
+<p>
+  <b>A_materno</b>
+  <%=h @estudiante.a_materno %>
+</p>
+
+<p>
+  <b>Ci</b>
+  <%=h @estudiante.ci %>
+</p>
+
+<p>
+  <b>Correo</b>
+  <%=h @estudiante.correo %>
+</p>
+
+<p>
+  <b>Telefono</b>
+  <%=h @estudiante.telefono %>
+</p>
+
+
+<%= link_to 'Edit', edit_estudiante_path(@estudiante) %> 
+<%= link_to 'Back', estudiantes_path %>

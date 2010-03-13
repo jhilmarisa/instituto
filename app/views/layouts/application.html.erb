@@ -1,0 +1,38 @@
+
+<html>
+<head>
+<title>INSTITUTO</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-language" content="es">
+<meta name="author" content="jhilmar">
+<%= stylesheet_link_tag 'style.css' %>
+
+</head>
+<body>
+<div id="wrap">
+   <div id="head">
+         <table ALIGN="center">
+              <tr> 
+                  <td><img src="images/banner.JPG"   width="740" height="100" border="" ></td>
+                      
+              </tr>
+        </table>
+       
+     </div>
+      
+   </div> 
+   <div class="estudiante">
+      <%=mostrar_estudiante%>
+      </div>
+         <table align="center">
+                        <tr >
+                          <TD HEIGHT=20  ><div style="padding-top:8px; text-transform:uppercase " align="center"> <b> <%= link_to 'inicio',{:controller=>"indexs", :action=>"index"}  %>&nbsp;&nbsp;&nbsp;&nbsp; <%= link_to 'INFORMACION',{:controller=>"presentaciones", :action=>"presentacion"}  %> &nbsp;&nbsp;&nbsp;&nbsp; <%= link_to 'SERVICIOS',{:controller=>"servicios", :action=>"servicio"}  %> &nbsp;&nbsp;&nbsp;&nbsp; <%= link_to 'CRONOGRAMAS',{:controller=>"cronogramas", :action=>"cronograma"}  %>&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'ADMISIONES I-2010',{:controller=>"admisiones", :action=>"admision"}  %> &nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'BIENESTAR',{:controller=>"bienestares", :action=>"bienestar"}  %>&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'automotriz',{:controller=>"automotrizs", :action=>"automotriz"}  %></b> </div></TD>    
+                      
+                        </TR>
+        </table>
+   <div id="content">
+  </div>
+   <%= yield %>
+
+</body>
+</html>

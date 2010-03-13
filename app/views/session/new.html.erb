@@ -1,0 +1,25 @@
+<table  align="center">
+
+</table>
+
+<table align="center">
+<caption widch="400" align="center"><h2>RESERVA  DE  CUPO</h2></caption>
+<caption><h3>Ingrese su numero de usuario y password para hacer una recerva</h3></caption>
+<% form_for @estudiante, :url => {:controller => :session} do |f| -%>
+  <%= f.error_messages %>
+  <tr><td>
+<%= f.label :login %><br /></td>
+<td><%= f.text_field :nombre_usuario %>
+</td></tr>
+<tr><td>
+<%= f.label :pass %><br />
+</td>
+<td> <%= f.password_field :password %></td></tr>
+<tr><td>
+<%=link_to   "<h3>"'Reservar de Incripcion'"</h3>", {:controller=>"reservas" ,:action=>"new"} %>
+</td></tr>
+</table>
+
+  <h4 align="center">Si No tien una cuenta registrada, registrese</h4>
+  <h1 align="center"><%= link_to 'AQUI', {:controller=>"estudiantes" ,:action=>"new"} %></h1>
+<% end -%>

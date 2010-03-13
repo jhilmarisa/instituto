@@ -1,0 +1,31 @@
+<h1>Lista de Reservaciones 
+</h1>
+
+<table>
+  <tr>
+    <th>Nombre de la Especialidad</th>
+    <th>Nombre del Estudiante</th>
+    <th>Apellido Paterno</th>
+    <th>Apellido Materno</th>
+    <th>Correo</th>
+    <th>Dias de Clases</th>
+    <th>Horario de clases</th>
+  </tr>
+
+<% @reservas.each do |reserva| %>
+  <tr>
+    <td><%=h reserva.nombre_especialidad %></td>
+    <td><%=h reserva.r_nombre %></td>
+    <td><%=h reserva.r_a_paterno %></td>
+    <td><%=h reserva.r_a_materno %></td>
+    <td><%=h reserva.r_correo %></td>
+    <td><%=h reserva.r_dia %></td>
+    <td><%=h reserva.r_hora %></td>
+   
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to '', new_reserva_path %>

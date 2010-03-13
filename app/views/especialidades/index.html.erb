@@ -1,0 +1,32 @@
+<h1>Listing especialidades</h1>
+
+<table>
+  <tr>
+    <th>Nombre especialidad</th>
+    <th>Costo matricula</th>
+    <th>Costo modulo</th>
+    <th>Duracion modulo</th>
+    <th>Cantidad modulos</th>
+    <th>Cupo max</th>
+    <th>Cupo min</th>
+  </tr>
+
+<% @especialidades.each do |especialidade| %>
+  <tr>
+    <td><%=h especialidade.nombre_especialidad %></td>
+    <td><%=h especialidade.costo_matricula %></td>
+    <td><%=h especialidade.costo_modulo %></td>
+    <td><%=h especialidade.duracion_modulo %></td>
+    <td><%=h especialidade.cantidad_modulos %></td>
+    <td><%=h especialidade.cupo_max %></td>
+    <td><%=h especialidade.cupo_min %></td>
+    <td><%= link_to 'Show', especialidade %></td>
+    <td><%= link_to 'Edit', edit_especialidade_path(especialidade) %></td>
+    <td><%= link_to 'Destroy', especialidade, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New especialidade', new_especialidade_path %>

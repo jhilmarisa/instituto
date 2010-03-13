@@ -1,0 +1,40 @@
+<h1>Editing reserva</h1>
+
+<% form_for(@reserva) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre_especialidad %><br />
+    <%= f.text_field :nombre_especialidad %>
+  </p>
+  <p>
+    <%= f.label :r_nombre %><br />
+    <%= f.text_field :r_nombre %>
+  </p>
+  <p>
+    <%= f.label :r_a_paterno %><br />
+    <%= f.text_field :r_a_paterno %>
+  </p>
+  <p>
+    <%= f.label :r_a_materno %><br />
+    <%= f.text_field :r_a_materno %>
+  </p>
+  <p>
+    <%= f.label :r_correo %><br />
+    <%= f.text_field :r_correo %>
+  </p>
+  <p>
+    <%= f.label :r_dia %><br />
+    <%= f.text_field :r_dia %>
+  </p>
+  <p>
+    <%= f.label :r_hora %><br />
+    <%= f.text_field :r_hora %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @reserva %> |
+<%= link_to 'Back', reservas_path %>

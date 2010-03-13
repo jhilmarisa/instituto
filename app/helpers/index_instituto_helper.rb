@@ -1,0 +1,2 @@
+module IndexInstitutoHelper
+end

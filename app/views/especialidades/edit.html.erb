@@ -1,0 +1,40 @@
+<h1>Editing especialidade</h1>
+
+<% form_for(@especialidade) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre_especialidad %><br />
+    <%= f.text_field :nombre_especialidad %>
+  </p>
+  <p>
+    <%= f.label :costo_matricula %><br />
+    <%= f.text_field :costo_matricula %>
+  </p>
+  <p>
+    <%= f.label :costo_modulo %><br />
+    <%= f.text_field :costo_modulo %>
+  </p>
+  <p>
+    <%= f.label :duracion_modulo %><br />
+    <%= f.text_field :duracion_modulo %>
+  </p>
+  <p>
+    <%= f.label :cantidad_modulos %><br />
+    <%= f.text_field :cantidad_modulos %>
+  </p>
+  <p>
+    <%= f.label :cupo_max %><br />
+    <%= f.text_field :cupo_max %>
+  </p>
+  <p>
+    <%= f.label :cupo_min %><br />
+    <%= f.text_field :cupo_min %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @especialidade %> |
+<%= link_to 'Back', especialidades_path %>

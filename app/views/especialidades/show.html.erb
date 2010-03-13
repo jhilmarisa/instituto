@@ -1,0 +1,38 @@
+<p>
+  <b>Nombre especialidad:</b>
+  <%=h @especialidade.nombre_especialidad %>
+</p>
+
+<p>
+  <b>Costo matricula:</b>
+  <%=h @especialidade.costo_matricula %>
+</p>
+
+<p>
+  <b>Costo modulo:</b>
+  <%=h @especialidade.costo_modulo %>
+</p>
+
+<p>
+  <b>Duracion modulo:</b>
+  <%=h @especialidade.duracion_modulo %>
+</p>
+
+<p>
+  <b>Cantidad modulos:</b>
+  <%=h @especialidade.cantidad_modulos %>
+</p>
+
+<p>
+  <b>Cupo max:</b>
+  <%=h @especialidade.cupo_max %>
+</p>
+
+<p>
+  <b>Cupo min:</b>
+  <%=h @especialidade.cupo_min %>
+</p>
+
+
+<%= link_to 'Edit', edit_especialidade_path(@especialidade) %> |
+<%= link_to 'Back', especialidades_path %>

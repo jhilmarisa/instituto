@@ -1,0 +1,75 @@
+<html>
+<body>
+<table ALIGN="center">
+<caption><h1>Registro de Nueva Especialidad</h1></caption>
+<% form_for(@especialidade) do |f| %>
+  <%= f.error_messages %>
+<tr>
+<td><p>
+    <%= f.label :especialidad %><br />
+    <%= f.text_field :nombre_especialidad %>
+  </p></td>
+</tr>
+
+<tr>
+<td><p>
+    <%= f.label :Costo_de_la_Matricula %><br />
+    <%= f.text_field :costo_matricula %>
+  </p></td>
+</tr>
+
+<tr>
+<td><p>
+    <%= f.label :costo_del_Modulo %><br />
+    <%= f.text_field :costo_modulo %>
+  </p></td>
+</tr>
+
+<tr>
+<td><p>
+    <%= f.label :duracion_del_modulo %><br />
+    <%= f.text_field :duracion_modulo %>
+  </p></td>
+</tr>
+
+<tr>
+<td>  <p>
+    <%= f.label :cantidad_de_modulos %><br />
+    <%= f.text_field :cantidad_modulos %>
+  </p></td>
+</tr>
+
+<tr>
+<td><p>
+    <%= f.label :cupo_maximo %><br />
+    <%= f.text_field :cupo_max %>
+  </p></td>
+</tr>
+
+<tr>
+<td><p>
+    <%= f.label :cupo_minimo %><br />
+    <%= f.text_field :cupo_min %>
+  </p></td>
+</tr>
+
+<tr>
+<td><p>
+    <%= f.submit 'CREAR' %>
+  </p></td>
+</tr>
+
+
+  
+  
+  </table>
+  </body>
+  </html>
+  
+
+  
+  
+  
+<% end %>
+
+<%= link_to 'Back', especialidades_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre_especialidad: MyString
+  r_nombre: MyString
+  r_a_paterno: MyString
+  r_a_materno: MyString
+  r_correo: MyString
+  r_dia: MyString
+  r_hora: MyString
+
+two:
+  nombre_especialidad: MyString
+  r_nombre: MyString
+  r_a_paterno: MyString
+  r_a_materno: MyString
+  r_correo: MyString
+  r_dia: MyString
+  r_hora: MyString

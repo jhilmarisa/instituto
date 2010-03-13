@@ -1,0 +1,29 @@
+
+
+D:\marisa\instituto2>ruby script/generate scaffold estudiantes nombre_ususario:s
+tring password:string nombre:string a_paterno:string a_materno:string ci:string
+correo:string telefono:string
+
+
+D:\marisa\instituto2>ruby script/generate scaffold especialidades nombre_especia
+lidad:string costo_matricula:decimal costo_modulo:decimal duracion_modulo:string
+ cantidad_modulos:integer cupo_max:integer cupo_min:integer
+
+
+D:\marisa\instituto2>ruby script/generate scaffold horarios nombre_especialidad
+string dias:string horas:string
+
+	
+D:\marisa\instituto2>ruby script/generate scaffold reservas nombre_especialidad:
+string r_nombre:string r_a_paterno:string r_a_materno:string r_correo:string r_d
+ia:string r_hora:string
+
+
+
+------------------------------------------------------------------------------------------
+SELECT e.costo_matricula, h.dias  from especialidades e , horarios h
+ where e.nombre_especialidad="ingles" 
+and e.nombre_especialidad=h.nombre_especialidad
+
+
+http://www.manualespdf.es/manual-css-pdf/

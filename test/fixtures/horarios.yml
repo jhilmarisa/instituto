@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre_especialidad: MyString
+  dias: MyString
+  horas: MyString
+
+two:
+  nombre_especialidad: MyString
+  dias: MyString
+  horas: MyString

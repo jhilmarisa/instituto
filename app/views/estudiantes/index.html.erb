@@ -1,0 +1,27 @@
+
+
+<table CELLPADDING="10" align="center">
+<caption widch="150"><h1>Lista de Estudiantes Registrados</h1></caption>
+  <tr>
+   <th>Estudiante</th>
+    <th>Apellido Paterno</th>
+    <th>Apellido Materno</th>
+    <th>Ci</th>
+    <th>Correo</th>
+    <th>Telefono</th>
+  </tr>
+
+<% @estudiantes.each do |estudiante| %>
+  <tr>
+    <td><%=h estudiante.nombre %></td>
+    <td><%=h estudiante.a_paterno %></td>
+    <td><%=h estudiante.a_materno %></td>
+    <td><%=h estudiante.ci %></td>
+    <td><%=h estudiante.correo %></td>
+    <td><%=h estudiante.telefono %></td>
+     </tr>
+<% end %>
+</table>
+
+<br />
+<%= link_to 'Nuevo Estudiante', new_estudiante_path %>

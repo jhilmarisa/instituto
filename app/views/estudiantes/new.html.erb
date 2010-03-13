@@ -1,0 +1,72 @@
+<html>
+<Body>
+<table align="center" >
+<caption width="300"><h1><b>Nuevo Estudiante</b></h1></caption>
+<% form_for(@estudiante) do |f| %>
+  <%= f.error_messages %>
+<tr>
+<td ><%= f.label :Nombre_de_Usuario%></td>
+<td><%= f.text_field :nombre_usuario %></td>
+</tr>
+
+<tr>
+<td>
+    <%= f.label :Password%></td>
+    <td><%= f.text_field :password %>
+  </td>
+</tr>
+
+<tr>
+<td><%= f.label :Nombre_de_Estudiante %></td>
+<td>  <%= f.text_field :nombre %>
+  </td>
+</tr>
+
+<tr>
+<td>
+    <%= f.label :Apellido_Paterno%></td>
+    <td><%= f.text_field :a_paterno %>
+  </td>
+</tr>
+
+<tr>
+<td> 
+    <%= f.label :Apellido_Materno%></td>
+    <td><%= f.text_field :a_materno %>
+  </td>
+</tr>
+
+<tr>
+<td><%= f.label :CI%></td>
+<td><%= f.text_field :ci %>  </td>
+</tr>
+
+<tr>
+<td>
+    <%= f.label :Correo %></td>
+    <td><%= f.text_field :correo %>
+  </td>
+</tr>
+
+<tr>
+<td>
+    <%= f.label :Telefono %></td>
+  <td><%= f.text_field :telefono %></td>
+</tr>
+
+<tr>
+<td>
+    <%= f.submit 'Create' %></td>
+  </tr>
+
+
+  
+  </table>
+
+</body>
+
+</html>
+  
+<% end %>
+
+<%= link_to 'Back', estudiantes_path %>

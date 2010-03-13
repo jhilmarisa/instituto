@@ -1,0 +1,18 @@
+<p>
+  <b>Nombre especialidad:</b>
+  <%=h @horario.nombre_especialidad %>
+</p>
+
+<p>
+  <b>Dias:</b>
+  <%=h @horario.dias %>
+</p>
+
+<p>
+  <b>Horas:</b>
+  <%=h @horario.horas %>
+</p>
+
+
+<%= link_to 'Edit', edit_horario_path(@horario) %> |
+<%= link_to 'Back', horarios_path %>

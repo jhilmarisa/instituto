@@ -1,0 +1,52 @@
+<HTML>
+<BODY>
+<TABLE ALIGN="CENTER" >
+<CAPTION><h1>Nueva Reserva</h1></caption>
+
+<% form_for(@reserva) do |f| %>
+  <%= f.error_messages %>
+
+ <tr>
+    <td><%= f.label :Especialidad%>
+    <td><%= f.select :nombre_especialidad,Especialidade::TIPOS,{:include_blank => true}  %>
+  </tr>
+<tr>
+   <td> <%= f.label :Nombre%><br />
+    <td><%= f.text_field :r_nombre %>
+    </tr>
+  <tr>
+      <td><%= f.label :Apellido_Paterno%>
+    <td><%= f.text_field :r_a_paterno %>
+  
+  </tr>
+  <tr>
+  
+    <td><%= f.label :Apellido_Materno%>
+    <td><%= f.text_field :r_a_materno %>
+  
+  </tr>
+  <tr>
+  
+    <td><%= f.label :correo%>
+    <td><%= f.text_field :r_correo %>
+    </tr>
+  <tr>
+      <td><%= f.label :Dia%>
+    <td><%= f.text_field :r_dia %>
+    </tr>
+  <tr>
+      <td><%= f.label :Horas_de_Clases%>
+    <td><%= f.text_field :r_hora %>
+  
+  </tr>
+  <tr>
+  
+    <td><%= f.submit 'CREAR' %>
+    </tr>
+    </table>
+    </body>
+    </html>
+  
+<% end %>
+
+<%= link_to 'Atras', reservas_path %>

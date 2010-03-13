@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre_especialidad: MyString
+  costo_matricula: 9.99
+  costo_modulo: 9.99
+  duracion_modulo: MyString
+  cantidad_modulos: 1
+  cupo_max: 1
+  cupo_min: 1
+
+two:
+  nombre_especialidad: MyString
+  costo_matricula: 9.99
+  costo_modulo: 9.99
+  duracion_modulo: MyString
+  cantidad_modulos: 1
+  cupo_max: 1
+  cupo_min: 1
